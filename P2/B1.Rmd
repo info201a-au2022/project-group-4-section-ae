@@ -1,7 +1,8 @@
 ---
-title: "index.RMD"
-output: html_document
+title: "B1"
+author: "Arona Cho, Irene Jo, Melanie Kuo"
 date: "2022-11-11"
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
