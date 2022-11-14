@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 
-read.csv("/Users/melaniekuo/Documents/womenstem.csv")
+read.csv("../data/women-stem.csv")
 
 arranged_stem <- women_stem %>% 
   arrange(desc(ShareWomen))
