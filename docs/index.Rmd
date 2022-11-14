@@ -91,34 +91,32 @@ Thank you to our TA for helping out with these assignments :)
  “The Labor Market for Recent College Graduates.” Federal Reserve Bank of New York, 2021, https://www.newyorkfed.org/research/college-labor-market/college-labor-market_wages.html 
  
   “State of Girls and Women in Stem.” National Girls Collaborative Project, 28 February 2022, https://ngcproject.org/resources/state-girls-and-women-stem. 
+  
+### Dynamic Paragraph
+  
+### Table
+```{r}
+```
 
+### B.4 | Shares of Total Women in STEM Majors
+```{r womenstem, fig.height = 13, fig.width = 13, echo=FALSE}
+source("../P2/B.4.R")
+women_stem_plot
+```
+This chart was included to show what STEM majors have the highest and lowest shares of women in each majors. We wanted to note STEM majors and fields that could increase their gender diversity. Our observations made us realize that major categories in Health (such as Communication Disorders Sciences and Services) included the highest share of women, while majors in Engineering (such as Mining and Mineral Engineering) was the category with the lowest share of women, demonstrating an area where STEM gender diversity needs to improve.
 
-* Please see Canvas for more details.
+### B.5 | 
+```{r}
+```
 
-## ACCESSING THE /source DIRECTORY
-### Example 1: Source some code and run a function
-```{r womenstem}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
- source("../P2/B.4.R")
- women_stem_plot
+### B.5 | 
+```{r}
 ```
 
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
 # msg <- data_access_test(" Morgan!")
-```
-
-## ABOUT THIS FILE: 
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
 ```
 
 ## Including Plots
