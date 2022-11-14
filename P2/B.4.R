@@ -1,10 +1,12 @@
 library(ggplot2)
 library(dplyr)
 
+read.csv("/Users/melaniekuo/Documents/womenstem.csv")
+
 arranged_stem <- women_stem %>% 
   arrange(desc(ShareWomen))
 
-ggplot(arranged_stem) +
+women_stem_plot <- ggplot(arranged_stem) +
   ggtitle("Shares of Total Women in STEM Majors") +
   geom_col(mapping = aes(x = ShareWomen, y = Major)) +
   labs(caption = "This chart was included to show what STEM majors have the
