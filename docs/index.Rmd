@@ -6,12 +6,11 @@ date: "11/13/2022"
 output: html_document
 ---
 
-
 ```{r setup, include=FALSE}
-source("../P2/B.4.R")
-# source("../P2/B4-Treemap.R")
-# source("../P2/B.6-plot.R")
 source("../P2/B2-summary.R")
+source("../P2/B.4.R")
+source("https://raw.githubusercontent.com/info201a-au2022/project-group-4-section-ae/main/P2/B5_treemap.R")
+source("../P2/B6 plot.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -98,11 +97,13 @@ Thank you to our TA for helping out with these assignments :)
   “State of Girls and Women in Stem.” National Girls Collaborative Project, 28 February 2022, https://ngcproject.org/resources/state-girls-and-women-stem. 
   
 ### Dynamic Paragraph
-We determined the median earnings of full-time, year-round workers of those in the `women-stem.csv` file. This data was evaluated for the purpose of determining what salaries women earned. The max median earning was `r summary_info_max`
+We determined the median earnings of full-time, year-round workers of those in the `women-stem.csv` file. This data was evaluated for the purpose of determining what salaries women earned. The max median earning was `r summary_info_max`, while the minimum median earnings as `r summary_info_min`. The average of the salaries was `r summary_info_mean`, and median between the observations was `r summary_info_median`.
+Lastly, we also calculated the range of the observations, which was `r summary_info_range`.
 
   
 ### Table
 ```{r}
+
 ```
 
 ### B.4 | Shares of Total Women in STEM Majors
@@ -111,21 +112,13 @@ women_stem_plot
 ```
 This chart was included to show what STEM majors have the highest and lowest shares of women in each majors. We wanted to note STEM majors and fields that could increase their gender diversity. Our observations made us realize that major categories in Health (such as Communication Disorders Sciences and Services) included the highest share of women, while majors in Engineering (such as Mining and Mineral Engineering) was the category with the lowest share of women, demonstrating an area where STEM gender diversity needs to improve.
 
-### B.5 | 
-```{r}
+### B.5 | Majors List Treemap
+```{r treemap_plot, fig.height = 13, fig.width = 13, echo=FALSE}
+treemap_plot
 ```
 
 ### B.6 | All-Ages Plot
-```{r}
-# all_ages_plot
+```{r all_ages_plot, fig.height = 13, fig.width = 13, echo=FALSE}
+all_ages_plot
 ```
-This chart demonstrates which catagories of college majors have the greatest and least rates of Unemployment. We wanted to create a data visualization that makes it easy for students see which catagories of majors tend to garentee higher rates of employment, so that they are better informed. Our observations made us realize that major catagories such as Art, Psychology & Social work and Humanities & Librtsl Arts have the greatest unemployment rates.
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-# plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+This chart demonstrates which categories of college majors have the greatest and least rates of Unemployment. We wanted to create a data visualization that makes it easy for students see which categories of majors tend to guarantee higher rates of employment, so that they are better informed. Our observations made us realize that major categories such as Art, Psychology & Social work and Humanities & Liberal Arts have the greatest unemployment rates.
