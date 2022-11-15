@@ -28,10 +28,10 @@ subgroup <- c("Agriculture & Natural Resources", "Arts", "Biology & Life Science
               "Physical Sciences", "Psychology & Social Work", "Social Science")
 value <- c(10, 8, 14, 13, 4, 11, 16, 29, 12, 15, 7, 1, 5, 1, 10, 9, 9)
 
-data <- data.frame(group, subgroup,value)
+data <- data.frame(group, subgroup, value)
 
 # treemap
-treemap(data,
+treemap_plot <- treemap(data,
         index=c("group","subgroup"),
         vSize="value",
         type="index"
