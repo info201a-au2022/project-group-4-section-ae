@@ -1,15 +1,19 @@
 ---
 title: "Analysis of College Majors and Impact on Employment"
 author: "Arona Cho, Irene Jo, Melanie Kuo"
-affiliation: "INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"
 date: "11/13/2022"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
+affiliation: "INFO-201: Technical Foundations of Informatics - The Information School
+  - University of Washington"
 ---
 
 ```{r setup, include=FALSE}
-source("../P2/B2-summary.R")
 source("../P2/B.4.R")
-source("https://raw.githubusercontent.com/info201a-au2022/project-group-4-section-ae/main/P2/B5_treemap.R")
+source("../P2/B3.R")
+source("../P2/B2-summary.R")
+source("../P2/B5_treemap.R")
 source("../P2/B6 plot.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -101,10 +105,11 @@ We determined the median earnings of full-time, year-round workers of those in t
 Lastly, we also calculated the range of the observations, which was `r summary_info_range`.
 
   
-### Table
-```{r}
-
+### B.3 | Table
+```{r data_table, fig.height = 13, fig.width = 13, echo=FALSE}
+data_table
 ```
+Our data table demonstrated the total number of women in different major categories, analyzing which categories had the highest and lowest percentages of women with an emphasis on the study of STEM categories. While the "Health" category had the highest amount of women, the data indicated a drastic lack in the number of women in the "Computers & Mathematics" fields, as well as the "Engineering" field. This demonstrated that a lack of gender diversity is prominent in technological fields, such as Computer Science & Mathematics and Engineering. 
 
 ### B.4 | Shares of Total Women in STEM Majors
 ```{r womenstem, fig.height = 13, fig.width = 13, echo=FALSE}
