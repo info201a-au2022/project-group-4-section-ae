@@ -6,8 +6,10 @@ date: "11/13/2022"
 output: html_document
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+source("../P2/B.4.R")
 ```
 
 ### Abstract: 
@@ -93,6 +95,7 @@ Thank you to our TA for helping out with these assignments :)
   “State of Girls and Women in Stem.” National Girls Collaborative Project, 28 February 2022, https://ngcproject.org/resources/state-girls-and-women-stem. 
   
 ### Dynamic Paragraph
+
   
 ### Table
 ```{r}
@@ -100,13 +103,13 @@ Thank you to our TA for helping out with these assignments :)
 
 ### B.4 | Shares of Total Women in STEM Majors
 ```{r womenstem, fig.height = 13, fig.width = 13, echo=FALSE}
-source("../P2/B.4.R")
 women_stem_plot
 ```
 This chart was included to show what STEM majors have the highest and lowest shares of women in each majors. We wanted to note STEM majors and fields that could increase their gender diversity. Our observations made us realize that major categories in Health (such as Communication Disorders Sciences and Services) included the highest share of women, while majors in Engineering (such as Mining and Mineral Engineering) was the category with the lowest share of women, demonstrating an area where STEM gender diversity needs to improve.
 
 ### B.5 | 
 ```{r}
+## majors_list_plot
 ```
 
 ### B.5 | 
