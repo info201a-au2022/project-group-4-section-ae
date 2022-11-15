@@ -3,7 +3,6 @@ title: "Analysis of College Majors and Impact on Employment"
 author: "Arona Cho, Irene Jo, Melanie Kuo"
 date: "11/13/2022"
 output:
-  pdf_document: default
   html_document: default
 affiliation: "INFO-201: Technical Foundations of Informatics - The Information School
   - University of Washington"
@@ -13,7 +12,7 @@ affiliation: "INFO-201: Technical Foundations of Informatics - The Information S
 source("../P2/B.4.R")
 source("../P2/B3.R")
 source("../P2/B2-summary.R")
-# source("../P2/B5_treemap.R")
+source("../P2/B5_treemap.R")
 source("../P2/B6 plot.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -119,7 +118,7 @@ This chart was included to show what STEM majors have the highest and lowest sha
 
 ### B.5 | Major List Treemap
 ```{r treemap_plot, fig.height = 13, fig.width = 13, echo=FALSE}
-# treemap_plot
+treemap_plot
 ```
 The chart was included to show how the different college majors that are available are distributed within the major categories. Our observations show that the engineering category contains the most majors (26 total majors) and that there was only one person within the total of 174 majors collected that did not have a college degree. 
 

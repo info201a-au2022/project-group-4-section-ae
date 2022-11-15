@@ -1,8 +1,7 @@
 library(ggplot2)
 library(dplyr)
-
+library(treemap)
 majors_list <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-4-section-ae/main/data/majors-list.csv")
-View(majors_list)
 
 # Build Dataset
 group <- c(rep("Agriculture & Natural Resources", 1), rep("Arts", 1), 

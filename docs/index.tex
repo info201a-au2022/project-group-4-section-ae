@@ -373,6 +373,148 @@ diversity needs to improve.
 \subsubsection{B.5 \textbar{} Major List
 Treemap}\label{b.5-major-list-treemap}}
 
+\begin{verbatim}
+## $tm
+##                                  group                            subgroup
+## 1      Agriculture & Natural Resources     Agriculture & Natural Resources
+## 2      Agriculture & Natural Resources                                <NA>
+## 3                                 Arts                                Arts
+## 4                                 Arts                                <NA>
+## 5               Biology & Life Science              Biology & Life Science
+## 6               Biology & Life Science                                <NA>
+## 7                             Business                            Business
+## 8                             Business                                <NA>
+## 9          Communications & Journalism         Communications & Journalism
+## 10         Communications & Journalism                                <NA>
+## 11             Computers & Mathematics             Computers & Mathematics
+## 12             Computers & Mathematics                                <NA>
+## 13                           Education                           Education
+## 14                           Education                                <NA>
+## 15                         Engineering                         Engineering
+## 16                         Engineering                                <NA>
+## 17                              Health                              Health
+## 18                              Health                                <NA>
+## 19           Humanities & Liberal Arts           Humanities & Liberal Arts
+## 20           Humanities & Liberal Arts                                <NA>
+## 21 Industrial Arts & Consumer Services Industrial Arts & Consumer Services
+## 22 Industrial Arts & Consumer Services                                <NA>
+## 23                   Interdisciplinary                   Interdisciplinary
+## 24                   Interdisciplinary                                <NA>
+## 25                 Law & Public Policy                 Law & Public Policy
+## 26                 Law & Public Policy                                <NA>
+## 27         Less than Bachelor's Degree         Less than Bachelor's Degree
+## 28         Less than Bachelor's Degree                                <NA>
+## 29                   Physical Sciences                                <NA>
+## 30                   Physical Sciences                   Physical Sciences
+## 31            Psychology & Social Work                                <NA>
+## 32            Psychology & Social Work            Psychology & Social Work
+## 33                      Social Science                                <NA>
+## 34                      Social Science                      Social Science
+##    vSize vColor stdErr vColorValue level        x0         y0          w
+## 1     10      1     10          NA     2 0.7947455 0.72000000 0.20525452
+## 2     10      1     10          NA     1 0.7947455 0.72000000 0.20525452
+## 3      8      1      8          NA     2 0.5689655 0.00000000 0.20935961
+## 4      8      1      8          NA     1 0.5689655 0.00000000 0.20935961
+## 5     14      1     14          NA     2 0.3448276 0.64102564 0.22413793
+## 6     14      1     14          NA     1 0.3448276 0.64102564 0.22413793
+## 7     13      1     13          NA     2 0.3448276 0.30769231 0.22413793
+## 8     13      1     13          NA     1 0.3448276 0.30769231 0.22413793
+## 9      4      1      4          NA     2 0.7783251 0.00000000 0.14778325
+## 10     4      1      4          NA     1 0.7783251 0.00000000 0.14778325
+## 11    11      1     11          NA     2 0.5689655 0.72000000 0.22577997
+## 12    11      1     11          NA     1 0.5689655 0.72000000 0.22577997
+## 13    16      1     16          NA     2 0.0000000 0.00000000 0.17797553
+## 14    16      1     16          NA     1 0.0000000 0.00000000 0.17797553
+## 15    29      1     29          NA     2 0.0000000 0.51666667 0.34482759
+## 16    29      1     29          NA     1 0.0000000 0.51666667 0.34482759
+## 17    12      1     12          NA     2 0.3448276 0.00000000 0.22413793
+## 18    12      1     12          NA     1 0.3448276 0.00000000 0.22413793
+## 19    15      1     15          NA     2 0.1779755 0.00000000 0.16685206
+## 20    15      1     15          NA     1 0.1779755 0.00000000 0.16685206
+## 21     7      1      7          NA     2 0.7783251 0.15555556 0.12931034
+## 22     7      1      7          NA     1 0.7783251 0.15555556 0.12931034
+## 23     1      1      1          NA     2 0.9261084 0.07777778 0.07389163
+## 24     1      1      1          NA     1 0.9261084 0.07777778 0.07389163
+## 25     5      1      5          NA     2 0.9076355 0.15555556 0.09236453
+## 26     5      1      5          NA     1 0.9076355 0.15555556 0.09236453
+## 27     1      1      1          NA     2 0.9261084 0.00000000 0.07389163
+## 28     1      1      1          NA     1 0.9261084 0.00000000 0.07389163
+## 29    10      1     10          NA     1 0.5689655 0.46666667 0.22686025
+## 30    10      1     10          NA     2 0.5689655 0.46666667 0.22686025
+## 31     9      1      9          NA     1 0.7958258 0.46666667 0.20417423
+## 32     9      1      9          NA     2 0.7958258 0.46666667 0.20417423
+## 33     9      1      9          NA     1 0.5689655 0.21960784 0.20935961
+## 34     9      1      9          NA     2 0.5689655 0.21960784 0.20935961
+##             h   color
+## 1  0.28000000 #C3824C
+## 2  0.28000000 #DC9E70
+## 3  0.21960784 #7D9C24
+## 4  0.21960784 #98B658
+## 5  0.35897436 #00A886
+## 6  0.35897436 #00C1A2
+## 7  0.33333333 #009CCB
+## 8  0.33333333 #57B5E2
+## 9  0.15555556 #B679CE
+## 10 0.15555556 #CE96E4
+## 11 0.28000000 #D5728D
+## 12 0.28000000 #ED90A7
+## 13 0.51666667 #B18B28
+## 14 0.51666667 #CAA659
+## 15 0.48333333 #55A248
+## 16 0.48333333 #75BC6D
+## 17 0.30769231 #00A7A2
+## 18 0.30769231 #00C0BC
+## 19 0.51666667 #6892D5
+## 20 0.51666667 #8AACEB
+## 21 0.31111111 #CA71BE
+## 22 0.31111111 #E290D5
+## 23 0.07777778 #CF796D
+## 24 0.07777778 #E8968B
+## 25 0.31111111 #9A940C
+## 26 0.31111111 #B4AF4F
+## 27 0.07777778 #00A668
+## 28 0.07777778 #4AC087
+## 29 0.25333333 #00BDD1
+## 30 0.25333333 #00A4B9
+## 31 0.25333333 #B1A1EC
+## 32 0.25333333 #9685D6
+## 33 0.24705882 #EC8DC0
+## 34 0.24705882 #D46FA8
+## 
+## $type
+## [1] "index"
+## 
+## $vSize
+## [1] "value"
+## 
+## $vColor
+## [1] NA
+## 
+## $stdErr
+## [1] "value"
+## 
+## $algorithm
+## [1] "pivotSize"
+## 
+## $vpCoorX
+## [1] 0.03028468 0.96971532
+## 
+## $vpCoorY
+## [1] 0.02187227 0.90034996
+## 
+## $aspRatio
+## [1] 1.544667
+## 
+## $range
+## [1] NA
+## 
+## $mapping
+## [1] NA NA NA
+## 
+## $draw
+## [1] TRUE
+\end{verbatim}
+
 The chart was included to show how the different college majors that are
 available are distributed within the major categories. Our observations
 show that the engineering category contains the most majors (26 total
