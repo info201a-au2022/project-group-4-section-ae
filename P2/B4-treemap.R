@@ -25,11 +25,11 @@ group <- c(rep("Agriculture & Natural Resources", 10), rep("Arts", 8),
 subgroup <- c(majors_list$Major)
 value <- c(10, 8, 14, 13, 4, 11, 16, 29, 12, 15, 7, 1, 5, 1, 10, 9, 9)
 
-data <- data.frame(group,subgroup,value)
+data <- data.frame(group, subgroup, value)
 
 # treemap
 treemap(data,
         index=c("group","subgroup"),
         vSize="value",
         type="index"
-) 
+)
