@@ -11,7 +11,7 @@ output: html_document
 source("../P2/B.4.R")
 # source("../P2/B4-Treemap.R")
 # source("../P2/B.6-plot.R")
-
+source("../P2/B2-summary.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -98,6 +98,7 @@ Thank you to our TA for helping out with these assignments :)
   “State of Girls and Women in Stem.” National Girls Collaborative Project, 28 February 2022, https://ngcproject.org/resources/state-girls-and-women-stem. 
   
 ### Dynamic Paragraph
+We determined the median earnings of full-time, year-round workers of those in the `women-stem.csv` file. This data was evaluated for the purpose of determining what salaries women earned. The max median earning was `r summary_info_max`
 
   
 ### Table
