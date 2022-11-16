@@ -4,7 +4,6 @@
 library(dplyr)
 
 women_stem <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-4-section-ae/main/data/women-stem.csv")
-View()
 summary_info_max <-list()
 summary_info_max$Median_max_value <- women_stem %>%
   filter(Median == max(Median, na.rm = T)) %>%
