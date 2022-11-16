@@ -597,9 +597,31 @@ Project, 28 February 2022, <a href="https://ngcproject.org/resources/state-girls
 </div>
 <div id="dynamic-paragraph" class="section level3">
 <h3>Dynamic Paragraph</h3>
+<p>We determined the median earnings of full-time, year-round workers of
+those in the <code>women-stem.csv</code> file. This data was evaluated
+for the purpose of determining what salaries women earned. The max
+median earning was 110000, while the minimum median earnings as 26000.
+The average of the salaries was 4.6118421^{4}, and median between the
+observations was 4.435^{4}. Lastly, we also calculated the range of the
+observations, which was 84000.</p>
 </div>
-<div id="table" class="section level3">
-<h3>Table</h3>
+<div id="b.3-table" class="section level3">
+<h3>B.3 | Table</h3>
+<pre><code>##          Major Catagories Total Number of Women
+## 1  Biology &amp; Life Science             19210.214
+## 2 Computers &amp; Mathematics              8207.545
+## 3             Engineering              4457.793
+## 4                  Health             32309.417
+## 5       Physical Sciences              9008.900</code></pre>
+<p>Our data table demonstrated the total number of women in different
+major categories, analyzing which categories had the highest and lowest
+percentages of women with an emphasis on the study of STEM categories.
+While the “Health” category had the highest amount of women, the data
+indicated a drastic lack in the number of women in the “Computers &amp;
+Mathematics” fields, as well as the “Engineering” field. This
+demonstrated that a lack of gender diversity is prominent in
+technological fields, such as Computer Science &amp; Mathematics and
+Engineering.</p>
 </div>
 <div id="b.4-shares-of-total-women-in-stem-majors" class="section level3">
 <h3>B.4 | Shares of Total Women in STEM Majors</h3>
@@ -613,8 +635,152 @@ while majors in Engineering (such as Mining and Mineral Engineering) was
 the category with the lowest share of women, demonstrating an area where
 STEM gender diversity needs to improve.</p>
 </div>
-<div id="b.5" class="section level3">
-<h3>B.5 |</h3>
+<div id="b.5-major-list-treemap" class="section level3">
+<h3>B.5 | Major List Treemap</h3>
+<pre><code>## $tm
+##                                  group                            subgroup
+## 1      Agriculture &amp; Natural Resources     Agriculture &amp; Natural Resources
+## 2      Agriculture &amp; Natural Resources                                &lt;NA&gt;
+## 3                                 Arts                                Arts
+## 4                                 Arts                                &lt;NA&gt;
+## 5               Biology &amp; Life Science              Biology &amp; Life Science
+## 6               Biology &amp; Life Science                                &lt;NA&gt;
+## 7                             Business                            Business
+## 8                             Business                                &lt;NA&gt;
+## 9          Communications &amp; Journalism         Communications &amp; Journalism
+## 10         Communications &amp; Journalism                                &lt;NA&gt;
+## 11             Computers &amp; Mathematics             Computers &amp; Mathematics
+## 12             Computers &amp; Mathematics                                &lt;NA&gt;
+## 13                           Education                           Education
+## 14                           Education                                &lt;NA&gt;
+## 15                         Engineering                         Engineering
+## 16                         Engineering                                &lt;NA&gt;
+## 17                              Health                              Health
+## 18                              Health                                &lt;NA&gt;
+## 19           Humanities &amp; Liberal Arts           Humanities &amp; Liberal Arts
+## 20           Humanities &amp; Liberal Arts                                &lt;NA&gt;
+## 21 Industrial Arts &amp; Consumer Services Industrial Arts &amp; Consumer Services
+## 22 Industrial Arts &amp; Consumer Services                                &lt;NA&gt;
+## 23                   Interdisciplinary                   Interdisciplinary
+## 24                   Interdisciplinary                                &lt;NA&gt;
+## 25                 Law &amp; Public Policy                 Law &amp; Public Policy
+## 26                 Law &amp; Public Policy                                &lt;NA&gt;
+## 27         Less than Bachelor&#39;s Degree         Less than Bachelor&#39;s Degree
+## 28         Less than Bachelor&#39;s Degree                                &lt;NA&gt;
+## 29                   Physical Sciences                                &lt;NA&gt;
+## 30                   Physical Sciences                   Physical Sciences
+## 31            Psychology &amp; Social Work                                &lt;NA&gt;
+## 32            Psychology &amp; Social Work            Psychology &amp; Social Work
+## 33                      Social Science                                &lt;NA&gt;
+## 34                      Social Science                      Social Science
+##    vSize vColor stdErr vColorValue level        x0        y0          w
+## 1     10      1     10          NA     2 0.3448276 0.0000000 0.18344828
+## 2     10      1     10          NA     1 0.3448276 0.0000000 0.18344828
+## 3      8      1      8          NA     2 0.8561190 0.3383459 0.14388100
+## 4      8      1      8          NA     1 0.8561190 0.3383459 0.14388100
+## 5     14      1     14          NA     2 0.3448276 0.6578947 0.23519010
+## 6     14      1     14          NA     1 0.3448276 0.6578947 0.23519010
+## 7     13      1     13          NA     2 0.5800177 0.6578947 0.21839080
+## 8     13      1     13          NA     1 0.5800177 0.6578947 0.21839080
+## 9      4      1      4          NA     2 0.8980843 0.1127820 0.10191571
+## 10     4      1      4          NA     1 0.8980843 0.1127820 0.10191571
+## 11    11      1     11          NA     2 0.3448276 0.3132832 0.18344828
+## 12    11      1     11          NA     1 0.3448276 0.3132832 0.18344828
+## 13    16      1     16          NA     2 0.0000000 0.2500000 0.34482759
+## 14    16      1     16          NA     1 0.0000000 0.2500000 0.34482759
+## 15    29      1     29          NA     2 0.0000000 0.5166667 0.34482759
+## 16    29      1     29          NA     1 0.0000000 0.5166667 0.34482759
+## 17    12      1     12          NA     2 0.7984085 0.6578947 0.20159151
+## 18    12      1     12          NA     1 0.7984085 0.6578947 0.20159151
+## 19    15      1     15          NA     2 0.0000000 0.0000000 0.34482759
+## 20    15      1     15          NA     1 0.0000000 0.0000000 0.34482759
+## 21     7      1      7          NA     2 0.6942529 0.1409774 0.20383142
+## 22     7      1      7          NA     1 0.6942529 0.1409774 0.20383142
+## 23     1      1      1          NA     2 0.8980843 0.0000000 0.05095785
+## 24     1      1      1          NA     1 0.8980843 0.0000000 0.05095785
+## 25     5      1      5          NA     2 0.6942529 0.0000000 0.20383142
+## 26     5      1      5          NA     1 0.6942529 0.0000000 0.20383142
+## 27     1      1      1          NA     2 0.9490421 0.0000000 0.05095785
+## 28     1      1      1          NA     1 0.9490421 0.0000000 0.05095785
+## 29    10      1     10          NA     1 0.5282759 0.3116343 0.16597701
+## 30    10      1     10          NA     2 0.5282759 0.3116343 0.16597701
+## 31     9      1      9          NA     1 0.5282759 0.0000000 0.16597701
+## 32     9      1      9          NA     2 0.5282759 0.0000000 0.16597701
+## 33     9      1      9          NA     1 0.6942529 0.3383459 0.16186613
+## 34     9      1      9          NA     2 0.6942529 0.3383459 0.16186613
+##            h   color
+## 1  0.3132832 #C3824C
+## 2  0.3132832 #DC9E70
+## 3  0.3195489 #7D9C24
+## 4  0.3195489 #98B658
+## 5  0.3421053 #00A886
+## 6  0.3421053 #00C1A2
+## 7  0.3421053 #009CCB
+## 8  0.3421053 #57B5E2
+## 9  0.2255639 #B679CE
+## 10 0.2255639 #CE96E4
+## 11 0.3446115 #D5728D
+## 12 0.3446115 #ED90A7
+## 13 0.2666667 #B18B28
+## 14 0.2666667 #CAA659
+## 15 0.4833333 #55A248
+## 16 0.4833333 #75BC6D
+## 17 0.3421053 #00A7A2
+## 18 0.3421053 #00C0BC
+## 19 0.2500000 #6892D5
+## 20 0.2500000 #8AACEB
+## 21 0.1973684 #CA71BE
+## 22 0.1973684 #E290D5
+## 23 0.1127820 #CF796D
+## 24 0.1127820 #E8968B
+## 25 0.1409774 #9A940C
+## 26 0.1409774 #B4AF4F
+## 27 0.1127820 #00A668
+## 28 0.1127820 #4AC087
+## 29 0.3462604 #00BDD1
+## 30 0.3462604 #00A4B9
+## 31 0.3116343 #B1A1EC
+## 32 0.3116343 #9685D6
+## 33 0.3195489 #EC8DC0
+## 34 0.3195489 #D46FA8
+## 
+## $type
+## [1] &quot;index&quot;
+## 
+## $vSize
+## [1] &quot;value&quot;
+## 
+## $vColor
+## [1] NA
+## 
+## $stdErr
+## [1] &quot;value&quot;
+## 
+## $algorithm
+## [1] &quot;pivotSize&quot;
+## 
+## $vpCoorX
+## [1] 0.02812148 0.97187852
+## 
+## $vpCoorY
+## [1] 0.01968504 0.91031496
+## 
+## $aspRatio
+## [1] 1.483512
+## 
+## $range
+## [1] NA
+## 
+## $mapping
+## [1] NA NA NA
+## 
+## $draw
+## [1] TRUE</code></pre>
+<p>The chart was included to show how the different college majors that
+are available are distributed within the major categories. Our
+observations show that the engineering category contains the most majors
+(26 total majors) and that there was only one person within the total of
+174 majors collected that did not have a college degree.</p>
 </div>
 <div id="b.6-all-ages-plot" class="section level3">
 <h3>B.6 | All-Ages Plot</h3>
@@ -626,13 +792,6 @@ majors tend to guarantee higher rates of employment, so that they are
 better informed. Our observations made us realize that major categories
 such as Art, Psychology &amp; Social work and Humanities &amp; Liberal
 Arts have the greatest unemployment rates.</p>
-</div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the
-code chunk to prevent printing of the R code that generated the
-plot.</p>
 </div>
 
 
