@@ -12,7 +12,7 @@ affiliation: "INFO-201: Technical Foundations of Informatics - The Information S
 source("../P2/B.4.R")
 source("../P2/B3.R")
 source("../P2/B2-summary.R")
-source("../P2/B5_treemap.R")
+source("../P2/B5_dotplot.R")
 source("../P2/B6 plot.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -116,11 +116,11 @@ women_stem_plot
 ```
 This chart was included to show what STEM majors have the highest and lowest shares of women in each majors. We wanted to note STEM majors and fields that could increase their gender diversity. Our observations made us realize that major categories in Health (such as Communication Disorders Sciences and Services) included the highest share of women, while majors in Engineering (such as Mining and Mineral Engineering) was the category with the lowest share of women, demonstrating an area where STEM gender diversity needs to improve.
 
-### B.5 | Major List Treemap
-```{r treemap_plot, fig.height = 13, fig.width = 13, echo=FALSE}
-treemap_plot
+### B.5 | Major List Categories
+```{r majors_list_plot, fig.height = 20, fig.width = 35, echo=FALSE}
+majors_list_plot
 ```
-The chart was included to show how the different college majors that are available are distributed within the major categories. Our observations show that the engineering category contains the most majors (26 total majors) and that there was only one person within the total of 174 majors collected that did not have a college degree. 
+This dot plot was included to show the different college majors that are available, as well as the popularity of the major distributions within the major categories. From our observations, out of all 174 majors collected, the "Engineering" category contained the most majors with 26 total majors, and the "Interdisciplinary" category contained the least majors with 1 major overall. 
 
 ### B.6 | All-Ages Plot
 ```{r all_ages_plot, fig.height = 13, fig.width = 13, echo=FALSE}
