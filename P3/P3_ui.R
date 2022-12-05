@@ -3,11 +3,14 @@
 library("shiny")
 library("plotly")
 library("ggplot2")
+library("knitr")
+library("markdown")
 
 # BASIC FORMAT FOR TABS AND PAGES
 
 intro_main_content <- mainPanel(
-  p("this is a test for para")
+  p("this is a test for para"), 
+  plotlyOutput("plot")
 )
 
 
@@ -16,8 +19,9 @@ intro_tab_panel <- tabPanel("Tab Introduction",
                             intro_main_content)
 
 
+# REPORT
+
 # MAKE SURE ONCE YOURE DONE WITH YOUR TAB TO INCLUDE IT IN THE NAV BAR PAGE
 
 ui <- navbarPage("Title for Tabs",
                  intro_tab_panel)
-
