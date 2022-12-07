@@ -1,11 +1,23 @@
 # ui P3
 
+<<<<<<< HEAD
+
 library("shiny")
 library("plotly")
 library("ggplot2")
 
 # BASIC FORMAT FOR TABS AND PAGES
 
+all_ages_data <- mainPanel(
+  p("this is a test for para")
+=======
+library("shiny")
+library("plotly")
+library("ggplot2")
+
+# BASIC FORMAT FOR TABS AND PAGES
+
+<<<<<<< HEAD
 intro_panel <- tabPanel("Introduction", titlePanel("Introduction"), 
                         p("For our project, we are analyzing hundreds of different college majors and their correlation to employment and unemployment. The categories we analyze are divided by age (all ages, under 28, and over 25), and we also will take a look at basic earnings and sex. Our goal is to determine whether or not one’s major has any impact on their future employment. The FiveThirtyEight article “The Economic Guide to Picking a Major” uses this dataset to demonstrate the importance behind picking a major: “A college degree is no guarantee of economic success. But through their choice of major, they can take at least some steps toward boosting their odds” (Casselman). We want to assess if majors are truly as important as perceived, and if majoring in something that may be perceived to have a low or high employment rate may actually turn out to have a different or unexpected outcome."),
                         )
@@ -13,6 +25,12 @@ intro_panel <- tabPanel("Introduction", titlePanel("Introduction"),
 women_stem_main_content <- mainPanel(
   plotOutput("plot"),
   p("This chart was included to show what STEM majors have the highest and lowest shares of women in each majors. We wanted to note STEM majors and fields that could increase their gender diversity. Our observations made us realize that major categories in Health (such as Communication Disorders Sciences and Services) included the highest share of women, while majors in Engineering (such as Mining and Mineral Engineering) was the category with the lowest share of women, demonstrating an area where STEM gender diversity needs to improve.")
+=======
+intro_main_content <- mainPanel(
+  p("this is a test for para"), 
+  plotlyOutput("plot")
+>>>>>>> refs/remotes/origin/main
+>>>>>>> 316154d0d08b6d635089c5b9948cd061d2d564ad
 )
 
 women_stem_sidebar <- sidebarPanel(textInput("Search for a Major", "Major Name", 
@@ -55,9 +73,25 @@ Tunguz, Bojan. Women-stem (Data set), 2020.
 https://www.kaggle.com/datasets/tunguz/college-majors?select=women-stem.csv")
                               )
 
+<<<<<<< HEAD
 
 # MAKE SURE ONCE YOURE DONE WITH YOUR TAB TO INCLUDE IT IN THE NAV BAR PAGE
 
 ui <- navbarPage("College Majors",
                  intro_panel, women_stem_tab_panel, full_report_panel)
 
+=======
+<<<<<<< HEAD
+# MAKE SURE ONCE YOURE DONE WITH YOUR TAB TO INCLUDE IT IN THE NAV BAR PAGE
+
+ui <- navbarPage("Title for Tabs",
+                 intro_tab_panel)
+=======
+# REPORT
+
+# MAKE SURE ONCE YOURE DONE WITH YOUR TAB TO INCLUDE IT IN THE NAV BAR PAGE
+
+ui <- navbarPage("Title for Tabs",
+                 intro_tab_panel)
+>>>>>>> refs/remotes/origin/main
+>>>>>>> 316154d0d08b6d635089c5b9948cd061d2d564ad
