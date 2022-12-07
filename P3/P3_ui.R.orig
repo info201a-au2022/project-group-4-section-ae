@@ -1,0 +1,46 @@
+# ui P3
+
+<<<<<<< HEAD
+
+library("shiny")
+library("plotly")
+library("ggplot2")
+
+# BASIC FORMAT FOR TABS AND PAGES
+
+all_ages_data <- mainPanel(
+  p("this is a test for para")
+=======
+library("shiny")
+library("plotly")
+library("ggplot2")
+library("knitr")
+library("markdown")
+
+# BASIC FORMAT FOR TABS AND PAGES
+
+intro_main_content <- mainPanel(
+  p("this is a test for para"), 
+  plotlyOutput("plot")
+>>>>>>> refs/remotes/origin/main
+)
+
+
+intro_tab_panel <- tabPanel("Tab Introduction", 
+                            titlePanel("title for page"),
+                            intro_main_content)
+
+
+<<<<<<< HEAD
+# MAKE SURE ONCE YOURE DONE WITH YOUR TAB TO INCLUDE IT IN THE NAV BAR PAGE
+
+ui <- navbarPage("Title for Tabs",
+                 intro_tab_panel)
+=======
+# REPORT
+
+# MAKE SURE ONCE YOURE DONE WITH YOUR TAB TO INCLUDE IT IN THE NAV BAR PAGE
+
+ui <- navbarPage("Title for Tabs",
+                 intro_tab_panel)
+>>>>>>> refs/remotes/origin/main
