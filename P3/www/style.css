@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Change header text to imported font */
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h4 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Make text visible on inputs */
+.shiny-input-container {
+  color: #474747;
+}
