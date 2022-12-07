@@ -5,13 +5,12 @@ library(tidyverse)
 server <- function(input, output) {
   
 
-  all_ages_data <- reactive({
+  all_ages_data <- renderPlot({
     all_ages <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-4-section-ae/main/data/all-ages.csv")
   
     #all_ages <- all_ages %>%  filter(Unemployment_rate > input$range_input)
     #do I need to do this
-    #all_ages <- all_ages %>% group_by(Major_category, na.rm = TRUE) %>% summarise(Unemployment_rate_mean = mean(Unemployment_rate))
-    all_ages <- all_ages %>% filter(Major_category %in% input$major_input)
+    all_ages <- all_ages %>% filter(Major_category %in% input$major_input) %>% group_by(Major_category, na.rm = TRUE) %>% summarise(Unemployment_rate_mean = mean(Unemployment_rate))
   })
   
   output$plot <- renderPlot({
