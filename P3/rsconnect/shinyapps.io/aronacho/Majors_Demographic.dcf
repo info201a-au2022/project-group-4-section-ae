@@ -5,9 +5,9 @@ account: aronacho
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7789814
-bundleId: 6579488
+bundleId: 6603763
 url: https://aronacho.shinyapps.io/Majors_Demographic/
-when: 1669938048.81444
-lastSyncTime: 1669938048.81446
+when: 1670404137.13187
+lastSyncTime: 1670404137.13189
 asMultiple: FALSE
 asStatic: FALSE

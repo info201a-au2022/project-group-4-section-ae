@@ -1,0 +1,10 @@
+# app
+
+library("shiny")
+library("plotly")
+
+source("ui.R")
+source("server.R")
+
+shinyApp(ui, server)
+

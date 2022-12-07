@@ -14,7 +14,7 @@ source("../P2/B3.R")
 source("../P2/B2-summary.R")
 source("../P2/B5_dotplot.R")
 source("../P2/B6 plot.R")
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 ```
 
 ### Abstract: 
@@ -57,8 +57,8 @@ Our dataset showcases information regarding various majors and their statistics 
 
 ---
 ##### Table 1. Summary of the dataset.
-|Data File| Num of observations (row)| Num of var (col)|
-|---------| ----------------------|------------------|
+Data File|Num of observations (row)| Num of var (col)
+|---------|-------------------------|----------------|
 |All-ages|173|10|
 |Grad-students|173|10|
 |Majors-list|174|3|
@@ -100,14 +100,23 @@ Thank you to our TA for helping out with these assignments :)
   “State of Girls and Women in Stem.” National Girls Collaborative Project, 28 February 2022, https://ngcproject.org/resources/state-girls-and-women-stem. 
   
 ### Dynamic Paragraph
-We determined the median earnings of full-time, year-round workers of those in the `women-stem.csv` file. This data was evaluated for the purpose of determining what salaries women earned. The max median earning was `r summary_info_max`, while the minimum median earnings as `r summary_info_min`. The average of the salaries was `r summary_info_mean`, and median between the observations was `r summary_info_median`.
-Lastly, we also calculated the range of the observations, which was `r summary_info_range`.
+We determined the median earnings of full-time, year-round workers of those in the `women-stem.csv` file. This data was evaluated for the purpose of determining what salaries women earned. The max median earning was \$`r summary_info_max`, while the minimum median earnings as \$`r summary_info_min`. The average of the salaries was \$`r summary_info_mean`, and median between the observations was \$`r summary_info_median`.
+Lastly, we also calculated the range of the observations, which was \$`r summary_info_range`.
 
   
 ### B.3 | Table
 ```{r data_table, fig.height = 13, fig.width = 13, echo=FALSE}
 data_table
 ```
+
+Major Categories|Total Number of Women
+|---------|-------------------------|----------------|
+|Biology & Life Science|19210.214|
+|Computers & Mathematics|8207.545|
+|Engineering|4457.793|
+|Health|32309.417|
+|Physical Sciences|9008.900|
+
 Our data table demonstrated the total number of women in different major categories, analyzing which categories had the highest and lowest percentages of women with an emphasis on the study of STEM categories. While the "Health" category had the highest amount of women, the data indicated a drastic lack in the number of women in the "Computers & Mathematics" fields, as well as the "Engineering" field. This demonstrated that a lack of gender diversity is prominent in technological fields, such as Computer Science & Mathematics and Engineering. 
 
 ### B.4 | Shares of Total Women in STEM Majors

@@ -1,0 +1,14 @@
+name: majors-impact-employ
+title: majors-impact-employ
+username:
+account: aronacho
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7836076
+bundleId: 6605934
+url: https://aronacho.shinyapps.io/majors-impact-employ/
+when: 1670435119.19661
+lastSyncTime: 1670435119.19662
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: figure/all_ages_plot-1.png|figure/majors_list_plot-1.png|figure/womenstem-1.png|grad-students copy.csv|report.html|report.Rmd
