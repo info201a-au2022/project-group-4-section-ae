@@ -5,10 +5,10 @@ account: aronacho
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7836076
-bundleId: 6612358
+bundleId: 6612367
 url: https://aronacho.shinyapps.io/majors-impact-employ/
-when: 1670532952.6547
-lastSyncTime: 1670532952.65471
+when: 1670532990.45377
+lastSyncTime: 1670532990.45379
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: figure/all_ages_plot-1.png|figure/majors_list_plot-1.png|figure/womenstem-1.png|grad-students copy.csv|report.html|report.Rmd
