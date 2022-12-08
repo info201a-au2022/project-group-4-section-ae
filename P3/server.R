@@ -16,8 +16,9 @@ majors_list <- read.csv("https://raw.githubusercontent.com/info201a-au2022/proje
 majors_list <- majors_list %>% 
   rename("Category" = Major_category,
          "Share of Women" = ShareWomen,
-         "Unemployment Rate" = Unemployment_rate) %>% 
-  select(Rank, Major, Category, `Share of Women`, Total, Men, Women, `Unemployment Rate`)
+         "Unemployment Rate" = Unemployment_rate,
+         "Median Wage" = Median) %>% 
+  select(Rank, Major, Category, `Share of Women`, Total, Men, Women, `Unemployment Rate`, `Median Wage`)
 
   # Gender Plot
 
@@ -56,7 +57,7 @@ server <- function(input, output) {
     } else if (input$categories == "Engineering") {
       test_engineering_plot <- ggplot(test_data_engineering, aes(fill = Major_category)) +
         ggtitle("Shares of Total Women in STEM Majors") +
-        geom_col(mapping = aes(x = ShareWomen, y = Major)) +
+        geom_col(mapping = aes(x = ShareWomen, y = Major), fill = "#03BF7B") +
         labs(x = "Women as Share of Total Major Population", y = "Majors") +
         theme(plot.caption.position = "plot",
               plot.caption = element_text(hjust = 0))
@@ -64,15 +65,14 @@ server <- function(input, output) {
     } else if (input$categories == "Computers & Mathematics") {
       data_comp_math_plot <- ggplot(test_data_comp_math, aes(fill = Major_category)) +
         ggtitle("Shares of Total Women in STEM Majors") +
-        geom_col(mapping = aes(x = ShareWomen, y = Major)) +
-        labs(x = "Women as Share of Total Major Population", y = "Majors") +
+        geom_col(mapping = aes(x = ShareWomen, y = Major), fill = "#A1A500") +
         theme(plot.caption.position = "plot",
               plot.caption = element_text(hjust = 0))
       data_comp_math_plot
     } else if (input$categories == "Health") {
       test_data_health_plot <- ggplot(test_data_health, aes(fill = Major_category)) +
         ggtitle("Shares of Total Women in STEM Majors") +
-        geom_col(mapping = aes(x = ShareWomen, y = Major)) +
+        geom_col(mapping = aes(x = ShareWomen, y = Major), fill = "#06B0F7") +
         labs(x = "Women as Share of Total Major Population", y = "Majors") +
         theme(plot.caption.position = "plot",
               plot.caption = element_text(hjust = 0))
@@ -80,7 +80,7 @@ server <- function(input, output) {
     } else if (input$categories == "Biology & Life Science") {
       test_data_bio_ls_plot <- ggplot(test_data_bio_ls, aes(fill = Major_category)) +
         ggtitle("Shares of Total Women in STEM Majors") +
-        geom_col(mapping = aes(x = ShareWomen, y = Major)) +
+        geom_col(mapping = aes(x = ShareWomen, y = Major), fill = "#F8766D") +
         labs(x = "Women as Share of Total Major Population", y = "Majors") +
         theme(plot.caption.position = "plot",
               plot.caption = element_text(hjust = 0))
@@ -88,7 +88,7 @@ server <- function(input, output) {
     } else if (input$categories == "Physical Sciences") {
       test_data_phys_sci_plot <- ggplot(test_data_phys_sci, aes(fill = Major_category)) +
         ggtitle("Shares of Total Women in STEM Majors") +
-        geom_col(mapping = aes(x = ShareWomen, y = Major)) +
+        geom_col(mapping = aes(x = ShareWomen, y = Major), fill = "#E86BF3") +
         labs(x = "Women as Share of Total Major Population", y = "Majors") +
         theme(plot.caption.position = "plot",
               plot.caption = element_text(hjust = 0))
